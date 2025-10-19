@@ -62,7 +62,8 @@ p{
   grid-template-columns: repeat(3, 1fr); // 3 cards por linha
   gap: 20px; // espaço entre os cards
   padding: 20px;
-  justify-items: center; // centraliza horizontalmente
+  justify-items: center;
+  text-align: center; // centraliza horizontalmente
 }
 .card {
   display: flex;
@@ -129,7 +130,18 @@ p{
 }
 
 @media (max-width: 600px) {
+  a {
+  margin: 0 2px;
+  font-size: 10px;
+  }
+  .card {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 280px;
+  }
   .cards-container {
     grid-template-columns: 1fr;
   }
 }
+
