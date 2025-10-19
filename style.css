@@ -1,0 +1,130 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Sevillana&family=Zen+Maru+Gothic&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "inter", sans-serif;
+  text-decoration: none;
+}
+
+header {
+  width: 100%;
+  height: 80px;
+  background-color: #fff;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+a {
+  margin: 0 15px;
+  font-size: 16px;
+  color: purple;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.logo {
+  font-size: 18px;
+  color: purple;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+h1 {
+  font-family: "Sevillana", cursive;
+  font-size: 32px;
+  color: purple;
+  margin: 0 40px;
+}
+
+h2 {
+  font-family: "Zen Maru Gothic", sans-serif;
+  font-size: 24px;
+  color: purple;
+}
+
+p {
+  font-family: "Zen Maru Gothic", sans-serif;
+}
+
+.description {
+  margin: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.cards-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  padding: 20px;
+  justify-items: center;
+}
+
+.card {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 380px;
+  background-color: #fff;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  padding: 15px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  font-family: "Poppins", sans-serif;
+  margin: 20px;
+}
+.card .card-content {
+  display: grid;
+  flex-direction: column;
+  justify-content: center;
+  gap: 5px;
+}
+.card .card-content h3 {
+  font-size: 16px;
+  font-weight: 600;
+  color: #222;
+}
+.card .card-content p {
+  margin: 0;
+  font-size: 14px;
+  color: #555;
+}
+.card .card-content .preco-antigo {
+  text-decoration: line-through;
+  color: #888;
+  font-size: 13px;
+}
+.card .card-content .preco-novo {
+  color: purple;
+  font-weight: 700;
+  font-size: 16px;
+}
+.card .card-image {
+  width: 80px;
+  height: 80px;
+  border-radius: 6px;
+  overflow: hidden;
+}
+.card .card-image img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+@media (max-width: 1024px) {
+  .cards-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (max-width: 600px) {
+  .cards-container {
+    grid-template-columns: 1fr;
+  }
+}/*# sourceMappingURL=style.css.map */
